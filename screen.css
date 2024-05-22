@@ -1,0 +1,365 @@
+@media screen {
+
+  /*  ~~~~~~~~~#######  STYLES PARTICULIERS  ##########~~~~~~~~~~~~  */
+
+  /* #########  Styles de la barre de navigation  #########*/
+  /* Barre de Navigation */
+
+  .navbar {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 15px rgba(5, 169, 156, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  /* Les éléments de la barre navigation */
+  .nav-item {
+    padding: 10px 20px;
+    color: #83818c;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  /*Animations  de la barre navigatio */
+  .nav-item:hover {
+    background-color: rgb(225, 212, 170);
+    /* Couleur de fond lors du survol */
+    color: #fff;
+  }
+
+  .nav-indicator {
+    position: absolute;
+    /* Positionné par rapport à la barre de navigation */
+    bottom: 0;
+    height: 4px;
+    background-color: orange;
+    transition: all 0.3s;
+    /* Transition pour une animation fluide */
+  }
+
+  /*##########  Particularites page index.html ##########*/
+
+  /* Conteneur parent pour l'image du haut de page */
+  #index-h1-img {
+    display: flex;
+    margin: auto;
+    /* Ajuster la marge supérieure pour centrer verticalement */
+  }
+
+  /* Positionenement du Titre h1*/
+  .header-index {
+    position: relative;
+  }
+
+  #h1-index {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    color: #ffffff;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*Positionnement droit de l'image */
+  .presentation {
+    float: right;
+    font-style: italic;
+    clear: both;
+    /* Empêche le chevauchement */
+    color: #666;
+    margin-top: 10px;
+  }
+
+  /* ######### Particularite page histoire.html ########### */
+  /* Creation de puce et mise en exergue */
+  #histoire-header::before {
+    content: '✲';
+    /* Caractère pour la puce */
+    color: rgb(11, 22, 227);
+    /* Couleur de la puce */
+    padding-right: 8px;
+    /* Espace entre la puce et le texte */
+  }
+
+
+  /* ######### Particularite page reglement.html ########### */
+
+  #reglement-h1-img {
+    display: flex;
+    margin: auto;
+    /* Ajuster la marge supérieure pour centrer verticalement */
+  }
+
+  /* Positionenement du Titre h1*/
+  .header-reglement {
+    position: relative;
+  }
+
+  #h1-reglement {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    color: #ffffff;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  /* ######### Particularite page pratiquer.html ########### */
+
+  #pratiquer-h1-img {
+    display: flex;
+    margin: auto;
+    /* Ajuster la marge supérieure pour centrer verticalement */
+  }
+
+  /* Positionenement du Titre h1*/
+  .header-pratiquer {
+    position: relative;
+  }
+
+  #h1-pratiquer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    color: #ffffff;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 82%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*Positionnement droit de l'image */
+  .sport-sante {
+    float: right;
+    clear: both;
+    /* Empêche le chevauchement */
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+  }
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /*  ~~~~~~~~~#######  STYLES généraux A TOUTES LES PAGES  ##########~~~~~~~~~~~~  */
+
+  /* Corps */
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    height: fit-content;
+    margin-top: 50px;
+    padding: 0;
+    background-color: #f8f8f8;
+    margin-left: 100px;
+    /* Marge à gauche */
+    margin-right: 100px;
+    /* Marge à droite */
+  }
+
+  /* Paragraphes */
+  p {
+    text-align: justify;
+    margin: 10px 0;
+    /* Marge entre les paragraphes */
+    line-height: 1.6;
+    /* Hauteur de ligne pour l'espace entre les lignes */
+    color: #333;
+    /* Couleur du texte */
+    padding-left: 10px;
+    /* Espace pour la bordure */
+    padding: 10px;
+    /* Espace intérieur */
+  }
+
+  /* *********Style des sections au bas de page ********** */
+  /* En-tête */
+  .sections-overview header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Lliste des sections */
+  .sections-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    /* Retirer les puces */
+    padding: 0;
+    /* Retirer les marges internes */
+    margin: 0;
+    /* Retirer les marges externes */
+  }
+
+  /* Elements des sections */
+  .section-item {
+    display: flex;
+    flex-direction: column;
+    /* Aligner le texte en dessous du titre */
+    align-items: center;
+    /* Centrer le contenu */
+    background-color: rgba(5, 169, 156, 0.1);
+    /* Fond gris clair */
+    border: 1px solid #ccc;
+    /* Bordure grise */
+    padding: 20px;
+    /* Espace interne */
+    border-radius: 10px;
+    /* Coins arrondis */
+    width: 200px;
+    /* Largeur du carré */
+  }
+
+  /* Titre de la section */
+  .section-title {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    /* Supprimer le soulignement */
+    margin-bottom: 10px;
+    /* Espace entre le titre et la description */
+  }
+
+  /* Style de la description de la section */
+  .section-description {
+    color: #666;
+    text-align: center;
+
+  }
+
+
+  /* Liens hypertextes */
+  a {
+    color: #428fdd;
+    /* Couleur des liens */
+    text-decoration: none;
+    /* Pas de soulignement */
+  }
+
+  a:hover {
+    text-decoration: underline;
+    /* Soulignement au survol */
+  }
+
+  header,
+  footer,
+  nav,
+  article,
+  aside {
+    text-align: justify;
+    margin: 0px;
+    padding: 14px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(5, 169, 156, 0.1);
+  }
+
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  h2,
+  h3 {
+    padding-top: 14px;
+    color: #166796;
+    font-size: 19px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  h4 {
+    color: #1d457b;
+    font-size: 17px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  h5 {
+
+    color: #083066;
+    font-size: 15px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  /* Decoration */
+  * {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  /* Images */
+  img {
+
+    max-width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    /* Assure que les images ne débordent pas */
+    height: auto;
+    /* Préserve le ratio */
+    border-radius: 14px;
+    /* Coins arrondis */
+    display: block;
+    margin: 0 auto;
+    /* Centrer horizontalement */
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  figure {
+    text-align: center;
+    /* Centrer le texte et les images */
+  }
+
+  figcaption {
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    /* Pour positionner par rapport à l'image */
+    bottom: 0;
+    /* Placer au bas de l'image */
+    width: 100%;
+    /* S'assurer que la légende couvre toute la largeur de l'image */
+    padding: 5px;
+    /* Marge intérieure pour espacement */
+    font-size: 0.9em;
+    /* Taille du texte un peu plus petite */
+  }
+
+  /* Pied de Page */
+  footer {
+    text-align: center;
+    color: #666;
+  }
+
+  footer p {
+    text-align: center;
+    color: #666;
+  }
+
+  .socials {
+    display: inline-block;
+  }
+
+  .socials a {
+    display: inline;
+  }
+}
